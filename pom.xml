@@ -8,7 +8,7 @@
 	<groupId>com.googlecode.gwt-test-utils</groupId>
 	<artifactId>gwt-test-utils-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>0.48-SNAPSHOT</version>
+	<version>0.48</version>
 	<name>${project.artifactId}</name>
 	<description>gwt-test-utils is a Java framework that allows to test GWT client side code in a efficient, easy way</description>
 	<url>http://code.google.com/p/gwt-test-utils/</url>
@@ -48,6 +48,12 @@
 		<url>https://github.com/gwt-test-utils/gwt-test-utils</url>
 		<tag>HEAD</tag>
 	</scm>
+	<distributionManagement>
+		<repository>
+			<id>repo</id>
+			<url>${maven.repo.dir}/releases</url>
+		</repository>
+	</distributionManagement>
 	<ciManagement>
 		<system>buildhive</system>
 		<url>https://buildhive.cloudbees.com/job/gwt-test-utils/job/gwt-test-utils/</url>
